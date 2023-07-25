@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rhtap-onprem-testing/user1-tenant/my-app/devfile-sample@sha256:926572a77cc6d88b21dae428e96e7fd784d6d87ca030667d43550ffca040337e
+        name: my-nodejs
+        resources: {}
+status: {}
